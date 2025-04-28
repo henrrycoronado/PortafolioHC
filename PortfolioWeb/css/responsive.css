@@ -1,0 +1,33 @@
+#hero h1 {
+    font-size: 2rem;
+}
+
+#hero p {
+    font-size: 1rem;
+}
+
+/* SECCIÓN DE PROYECTOS */
+.projects-gallery {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.project-card {
+    padding: 15px;
+}
+
+#about h2 {
+    font-size: 1.5rem;
+}
+
+.skills li {
+    font-size: 1rem;
+}
+
+/* CONTACTO */
+#contact form {
+    padding: 0 20px;
+}
+
+#contact input, #contact textarea {
+    padding: 10px;
+}
