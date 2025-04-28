@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio de Desarrollo de Software</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
     <header>
         <nav class="navbar">
             <div class="logo">
-                <a href="#">HenrryACV</a>
+                <a href="#">
+                    <img src="assets/img/logo-sf.png" alt="HenrryACV Logo">
+                </a>
             </div>
             <ul class="nav-links">
                 <li><a href="#about">Sobre mí</a></li>
@@ -23,7 +25,42 @@
     </header>
 
     <main>
-        <!-- Aquí iría el contenido, por ejemplo, las secciones de proyectos, sobre mí, etc. -->
+        <section id="about">
+            <h1>Sobre mí</h1>
+            <p>
+                Actualmente soy un estudiante de Ingeniería de Software, con un gusto por el desarrollo de soluciones prácticas y eficientes.
+                A lo largo de mi formación he aprendido a trabajar con metodologías ágiles, principios SOLID y varios patrones de diseño, lo que me ha ayudado a adaptarme a diferentes tipos de proyectos y equipos de trabajo.
+                
+                Tengo experiencia en desarrollo web y he trabajado con distintos frameworks, siempre buscando aprender nuevas tecnologías y enfrentar nuevos retos. Me considero una persona perfeccionista, comunicativa y crítica, con facilidad para liderar y adaptarme a distintos entornos.
+
+                Me gusta trabajar en equipo, compartir ideas y buscar siempre mejorar en lo que hago. Cada nuevo proyecto para mí es una oportunidad de crecer, aprender y aportar algo que realmente significativo.
+            </p>
+        </section>
+
+        <section id="projects">
+            <h1>Proyectos</h1>
+            <div class="projects-container">
+                <!-- Ejemplo de un proyecto -->
+                <div class="project-card">
+                    <h2>Proyecto 1</h2>
+                    <p>Descripción breve del proyecto realizado.</p>
+                </div>
+                <div class="project-card">
+                    <h2>Proyecto 2</h2>
+                    <p>Descripción breve del proyecto realizado.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h1>Contacto</h1>
+            <form id="contact-form">
+                <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+                <textarea id="message" name="message" rows="5" placeholder="Tu mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
     </main>
 
     <footer>
@@ -35,5 +72,7 @@
             <p>©2025 HenrryACV - Todos los derechos reservados.</p>
         </div>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
