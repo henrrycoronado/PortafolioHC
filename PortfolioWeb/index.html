@@ -1,79 +1,251 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portfolio de Desarrollo de Software</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Henrry Coronado - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Slab&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
-
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="navbar__logo">
-                <a href="#">
-                    <img src="assets/img/logo-sf.png" alt="HenrryACV Logo">
-                </a>
-            </div>
-            <ul class="navbar__links">
-                <li><a href="#about" class="navbar__link">Sobre mí</a></li>
-                <li><a href="#projects" class="navbar__link">Proyectos</a></li>
-                <li><a href="#contact" class="navbar__link">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section id="about" class="about">
-            <h1 class="about__title">Sobre mí</h1>
-            <p class="about__description">
-                Actualmente soy un estudiante de Ingeniería de Software, con un gusto por el desarrollo de soluciones prácticas y eficientes.
-                A lo largo de mi formación he aprendido a trabajar con metodologías ágiles, principios SOLID y varios patrones de diseño, lo que me ha ayudado a adaptarme a diferentes tipos de proyectos y equipos de trabajo.
-                
-                Tengo experiencia en desarrollo web y he trabajado con distintos frameworks, siempre buscando aprender nuevas tecnologías y enfrentar nuevos retos. Me considero una persona perfeccionista, comunicativa y crítica, con facilidad para liderar y adaptarme a distintos entornos.
-
-                Me gusta trabajar en equipo, compartir ideas y buscar siempre mejorar en lo que hago. Cada nuevo proyecto para mí es una oportunidad de crecer, aprender y aportar algo que realmente significativo.
-            </p>
-        </section>
-
-        <section id="projects" class="projects">
-            <h1 class="projects__title">Proyectos</h1>
-            <div class="projects__container">
-                <div class="projects__card">
-                    <h2 class="projects__card-title">Proyecto 1</h2>
-                    <p class="projects__card-description">Descripción breve del proyecto realizado.</p>
-                </div>
-                <div class="projects__card">
-                    <h2 class="projects__card-title">Proyecto 2</h2>
-                    <p class="projects__card-description">Descripción breve del proyecto realizado.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="contact">
-            <h1 class="contact__title">Contacto</h1>
-            <form id="contact-form" class="contact__form">
-                <input type="text" id="name" name="name" class="contact__input" placeholder="Tu nombre" required>
-                <input type="email" id="email" name="email" class="contact__input" placeholder="Tu correo electrónico" required>
-                <textarea id="message" name="message" class="contact__textarea" rows="5" placeholder="Tu mensaje" required></textarea>
-                <button type="submit" class="contact__button">Enviar</button>
-            </form>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="footer__content">
-            <div class="footer__social-links">
-                <a href="https://github.com/henrrycoronado" target="_blank" class="footer__social-link">GitHub</a>
-                <a href="https://linkedin.com/in/henrry-alberto-coronado-villca" target="_blank" class="footer__social-link">LinkedIn</a>
-            </div>
-            <p class="footer__copyright">
-                ©2025 HenrryACV - Todos los derechos reservados.
-            </p>
+  <div class="page-container">
+    <header class="site-header">
+      <img src="./img/logo.png" alt="Logo" class="logo" />
+      <nav class="main-nav">
+        <div class="nav-links">
+          <button class="nav-button" data-el="button-1">Home</button>
+          <button class="nav-button" data-el="button-2">About</button>
+          <button class="nav-button" data-el="button-3">Contact</button>
         </div>
+        <button class="cta-button">
+          <span>Sign Up</span>
+          <img class="button-img" src="./img/icon-flecha.svg" alt="Flecha hacia abajo" />
+        </button>
+      </nav>
+    </header>
+    <main class="main-content">
+      <section class="hero-section">
+        <img src="./img/FondoPresentacion.png" alt="Hero" class="hero-image" />
+        <div class="hero-content">
+          <p class="subtitle">Bienvenido al portafolio web de :) </p>
+          <h1 class="title">Henrry Alberto Coronado Villca</h1>
+          <p class="description">
+            Actualmente soy un estudiante del área de desarrollo de software, con un enfoque en crear soluciones precisas y eficientes.
+            Mi formación académica en Ingeniería me ha proporcionado una base técnica en metodologias y estrategias, que complementa mi 
+            capacidad para trabajar en equipo y adaptarme a diferentes entornos.
+          </p>
+          <p class="tagline">Empecemos ...
+          </p>
+        </div>
+      </section>
+      <section class="featured-section">
+        <h2 class="section-title">About me</h2>
+        <div class="section-divider"></div>
+        <div class="featured-container">
+          <article class="featured-article">
+            <div class="image-container">
+              <img
+                src="./img/perfil.jpeg"
+                alt="Feature 1"
+                class="feature-image"
+              />
+            </div>
+            <div class="content-container">
+              <div class="article-content">
+                <p class="date">November 4, 2023</p>
+                <h3 class="article-title">Innovative Solutions for Modern Challenges</h3>
+                <p class="article-description">
+                  Discover how our platform is revolutionizing the digital
+                  landscape with cutting-edge technology and user-centric design
+                  approaches.
+                </p>
+                <p class="category">Technology</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="updates-section">
+        <h2 class="section-title">My skills</h2>
+        <div class="section-divider"></div>
+        <div class="updates-container">
+          <article class="update-article">
+            <div class="content-container">
+              <div class="article-content right-aligned">
+                <p class="date">November 4, 2023</p>
+                <h3 class="article-title">
+                  Transforming Business Through Digital Innovation
+                </h3>
+                <p class="article-description">
+                  Learn how businesses are leveraging our platform to drive growth
+                  and achieve unprecedented success in the digital age.
+                </p>
+                <p class="category">Business</p>
+              </div>
+            </div>
+            <div class="image-container">
+              <img
+                src="./img/skills.svg"
+                alt="Feature 2"
+                class="feature-image"
+              />
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="services-section">
+        <h2 class="section-title">Our Services</h2>
+        <div class="section-divider"></div>
+        <div class="services-container">
+          <article class="service-card">
+            <div class="card-actions">
+              <button class="action-btn like-btn">❤️</button>
+              <button class="action-btn save-btn">💾</button>
+            </div>
+            <img
+              src="https://placehold.co/400x272"
+              alt="Service 1"
+              class="service-image"
+            />
+            <div class="service-content">
+              <p class="service-category">Digital Solutions</p>
+              <h3 class="article-title">Modern Technology</h3>
+              <p class="service-description">
+                Leverage our cutting-edge solutions to transform your business and
+                stay ahead of the competition.
+              </p>
+              <p class="learn-more">Learn More</p>
+            </div>
+          </article>
+      
+          <article class="service-card">
+            <div class="card-actions">
+              <button class="action-btn like-btn">❤️</button>
+              <button class="action-btn save-btn">💾</button>
+            </div>
+            <img
+              src="https://placehold.co/400x272"
+              alt="Service 2"
+              class="service-image"
+            />
+            <div class="service-content">
+              <p class="service-category">Innovation</p>
+              <h3 class="article-title">Creative Solutions</h3>
+              <p class="service-description">
+                Our innovative approach ensures your business stays at the
+                forefront of technological advancement.
+              </p>
+              <p class="learn-more">Discover More</p>
+            </div>
+          </article>
+      
+          <article class="service-card">
+            <div class="card-actions">
+              <button class="action-btn like-btn">❤️</button>
+              <button class="action-btn save-btn">💾</button>
+            </div>
+            <img
+              src="https://placehold.co/400x272"
+              alt="Service 3"
+              class="service-image"
+            />
+            <div class="service-content">
+              <p class="service-category">Excellence</p>
+              <h3 class="article-title">Quality Service</h3>
+              <p class="service-description">
+                Experience unparalleled quality and service excellence with our
+                dedicated team of experts.
+              </p>
+              <p class="learn-more">Find Out More</p>
+            </div>
+          </article>
+        </div>
+      </section>
+      
+      <section class="contact-section">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="section-divider"></div>
+        <div class="contact-container">
+          <div class="contact-info">
+            <div class="info-content">
+              <p class="contact-subtitle">Get In Touch</p>
+              <h3 class="article-title">Let's Start a Conversation</h3>
+              <p class="contact-description">
+                We're here to help you achieve your goals. Reach out to us and
+                let's discuss how we can work together.
+              </p>
+              <p class="contact-tagline">Your Success Awaits</p>
+            </div>
+          </div>
+          <form class="contact-form" data-el="form-1">
+            <h3 class="form-title">Send us a Message</h3>
+            <div class="form-fields">
+              <div class="form-group">
+                <label class="form-label">Name</label>
+                <input
+                  type="text"
+                  placeholder="Enter your name"
+                  class="form-input"
+                  data-el="input-1"
+                  data-dom-state="input-2"
+                />
+              </div>
+              <div class="form-group">
+                <label class="form-label">Email</label>
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  class="form-input"
+                  data-el="input-3"
+                  data-dom-state="input-4"
+                />
+              </div>
+              <div class="form-group">
+                <label class="form-label">Message</label>
+                <textarea
+                  placeholder="Your message"
+                  class="form-textarea"
+                  data-el="textarea-1"
+                  data-dom-state="textarea-2"
+                ></textarea>
+              </div>
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="submit-button">Send Message</button>
+              <div class="alternative-action">
+                <span class="or-text">or</span>
+                <button type="button" class="schedule-button">schedule a call</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-brand">
+        <img src="./img/logo-sf.png" alt="Logo" class="footer-logo" />
+        <div class="social-links">
+          <a href="https://www.instagram.com/henrry.coronado23/" class="social-link">
+            <img src="./img/icon-1.svg"/>
+          </a>
+          <a href="https://www.linkedin.com/in/henrry-alberto-coronado-villca/" class="social-link">
+            <img src="./img/icon-2.svg"/>
+          </a>
+          <a href="https://github.com/henrrycoronado" class="social-link">
+            <img src="./img/icon-3.svg"/>
+          </a>
+          <a href="mailto:coronadovillcahenrryalberto@gmail.com" class="social-link">
+            <img src="./img/icon-4.svg"/>
+          </a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4 class="footer-heading">Tools</h4>
+        <a href="#" class="footer-link">About Us</a>
+        <a href="#" class="footer-link">Services</a>
+        <a href="#" class="footer-link">Contact</a>
+      </div>
     </footer>
-
-    <script src="js/script.js"></script>
+  </div>
 </body>
 </html>
