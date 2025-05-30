@@ -1,76 +1,124 @@
-.featured-section {
-    padding: 30px 50px;
-  }
-  
-  .featured-container {
-    display: flex;
-    justify-content: center;
+.feature-container{
+    display: inline-flex;
+    flex-direction: column;
     align-items: center;
-  }
-  
-  .featured-article {
+    gap: 10px;
+    position: relative;
+    flex: 0 0 auto;
+    margin-left: -10.00px;
+    margin-right: -10.00px;  
+}
+
+.feature-body-container{
+    width: 1440px;
+    justify-content: center;
+    padding: 0px 50px;
     display: flex;
-    width: 100%;
-    max-width: 1320px;
-  }
-  
-  .image-container {
+    align-items: center;
+    position: relative;
+    flex: 0 0 auto;
+    border-radius: 0px 16px 16px 0px;
+    overflow: hidden;
+}
+
+.feature-body-img-container{
     display: flex;
     width: 660px;
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 16px;
-    justify-content: center;
-    align-items: center;
-    background-color: #000b1d;
-  }
-  
-  .feature-image {
-    width: auto;
     height: 320px;
+    align-items: flex-end;
+    border-radius: 16px 0px 0px 16px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+}
+
+.feature-body-img{
+    align-self: stretch;
+    width: 100%;
+    position: relative;
+    flex: 1;
+    flex-grow: 1;
     object-fit: cover;
-    border-radius: 180px;
-    align-items: center;
-  }
-  
-  .content-container {
+}
+
+.feature-body-content-container{
     width: 660px;
+    height: 320px;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    position: relative;
     background-color: #ffffff;
-    padding: 20px;
-    border-radius: 16px;
-  }
-  
-  .article-content {
-    padding: 20px;
-  }
-  
-  .right-aligned {
-    text-align: right;
-  }
-  
-  .date {
-    font-size: 14px;
-    font-weight: 700;
-    color: #b6bcbf;
-  }
-  
-  .article-title {
-    font-size: 26px;
-    font-weight: 700;
-    color: #1a1b22;
-    margin-top: 10px;
-  }
-  
-  .article-description {
-    font-size: 16px;
-    color: #1a1b22;
-    margin-top: 20px;
-  }
-  
-  .category {
-    font-size: 14px;
-    font-weight: 700;
-    color: #b6bcbf;
-    text-transform: uppercase;
-    margin-top: 20px;
-  }
+}
+.feature-body-content-title-container{
+    align-items: center;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.feature-body-content-title{
+    position: relative;
+    width: 589px;
+    margin-top: -1.00px;
+    font-family: var(--h4-font-family);
+    font-weight: var(--h4-font-weight);
+    color: var(--mainprimary);
+    font-size: var(--h4-font-size);
+    letter-spacing: var(--h4-letter-spacing);
+    line-height: var(--h4-line-height);
+    font-style: var(--h4-font-style);
+}
+
+.feature-body-content-detail-container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0px 20px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.feature-body-content-detail-1{
+    position: relative;
+    width: 149px;
+    margin-top: -1.00px;
+    font-family: var(--p-font-family);
+    font-weight: var(--p-font-weight);
+    color: var(--mainprimary);
+    font-size: var(--p-font-size);
+    letter-spacing: var(--p-letter-spacing);
+    line-height: var(--p-line-height);
+    font-style: var(--p-font-style);
+}
+.feature-body-content-detail-container-2{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+.feature-body-content-detail-2{
+    position: relative;
+    flex: 1;
+    margin-top: -1.00px;
+    font-family: var(--p-font-family);
+    font-weight: var(--p-font-weight);
+    color: var(--mainprimary);
+    font-size: var(--p-font-size);
+    letter-spacing: var(--p-letter-spacing);
+    line-height: var(--p-line-height);
+    font-style: var(--p-font-style);
+}
+
+

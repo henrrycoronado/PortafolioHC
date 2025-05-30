@@ -1,251 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Henrry Coronado - Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Slab&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/styles.css">
-</head>
-<body>
-  <div class="page-container">
-    <header class="site-header">
-      <img src="./img/logo.png" alt="Logo" class="logo" />
-      <nav class="main-nav">
-        <div class="nav-links">
-          <button class="nav-button" data-el="button-1">Home</button>
-          <button class="nav-button" data-el="button-2">About</button>
-          <button class="nav-button" data-el="button-3">Contact</button>
-        </div>
-        <button class="cta-button">
-          <span>Sign Up</span>
-          <img class="button-img" src="./img/icon-flecha.svg" alt="Flecha hacia abajo" />
-        </button>
-      </nav>
-    </header>
-    <main class="main-content">
-      <section class="hero-section">
-        <img src="./img/FondoPresentacion.png" alt="Hero" class="hero-image" />
-        <div class="hero-content">
-          <p class="subtitle">Bienvenido al portafolio web de :) </p>
-          <h1 class="title">Henrry Alberto Coronado Villca</h1>
-          <p class="description">
-            Actualmente soy un estudiante del área de desarrollo de software, con un enfoque en crear soluciones precisas y eficientes.
-            Mi formación académica en Ingeniería me ha proporcionado una base técnica en metodologias y estrategias, que complementa mi 
-            capacidad para trabajar en equipo y adaptarme a diferentes entornos.
-          </p>
-          <p class="tagline">Empecemos ...
-          </p>
-        </div>
-      </section>
-      <section class="featured-section">
-        <h2 class="section-title">About me</h2>
-        <div class="section-divider"></div>
-        <div class="featured-container">
-          <article class="featured-article">
-            <div class="image-container">
-              <img
-                src="./img/perfil.jpeg"
-                alt="Feature 1"
-                class="feature-image"
-              />
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="./css/styles.css">
+        <script src="./js/index.js" defer type="module"></script>
+    </head>
+    <body>
+        <nav class="navigation">
+            <a href="/" class="nav-link">
+                <img src="./img/logo-sf.png" class="nav-logo" />
+            </a>
+            <div class="nav-menu">
+                <a href="/about" class="nav-link">Sobre mí</a>
+                <a href="/projects" class="nav-link">Proyectos</a>
+                <a href="/contact" class="nav-link">Contacto</a>
+                <button class="signup-button">
+                    <span>Sign Up</span>
+                    <img src="./img/icono1.svg" />
+                </button>
             </div>
-            <div class="content-container">
-              <div class="article-content">
-                <p class="date">November 4, 2023</p>
-                <h3 class="article-title">Innovative Solutions for Modern Challenges</h3>
-                <p class="article-description">
-                  Discover how our platform is revolutionizing the digital
-                  landscape with cutting-edge technology and user-centric design
-                  approaches.
-                </p>
-                <p class="category">Technology</p>
-              </div>
+            <button class="mobile-menu-button">
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+            </button>
+        </nav>
+        <main id="container" class="main">
+        </main>
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="./img/logo-sf.png" alt="Footer logo" class="footer-logo" />
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <img src="./img/icono2.svg" />
+                        </a>
+                        <a href="#" class="social-link">
+                            <img src="./img/icono3.svg" />
+                        </a>
+                        <a href="#" class="social-link">
+                            <img src="./img/icono4.svg" />
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h2 class="footer-title">Explore</h2>
+                    </div>
+                    <a href="#" class="footer-link">¡Haz clic sobre mí!</a>
+                    <a href="#" class="footer-link">¡Haz clic sobre mí!</a>
+                    <a href="#" class="footer-link">¡Haz clic sobre mí!</a>
+                </div>
             </div>
-          </article>
-        </div>
-      </section>
-      <section class="updates-section">
-        <h2 class="section-title">My skills</h2>
-        <div class="section-divider"></div>
-        <div class="updates-container">
-          <article class="update-article">
-            <div class="content-container">
-              <div class="article-content right-aligned">
-                <p class="date">November 4, 2023</p>
-                <h3 class="article-title">
-                  Transforming Business Through Digital Innovation
-                </h3>
-                <p class="article-description">
-                  Learn how businesses are leveraging our platform to drive growth
-                  and achieve unprecedented success in the digital age.
-                </p>
-                <p class="category">Business</p>
-              </div>
-            </div>
-            <div class="image-container">
-              <img
-                src="./img/skills.svg"
-                alt="Feature 2"
-                class="feature-image"
-              />
-            </div>
-          </article>
-        </div>
-      </section>
-      <section class="services-section">
-        <h2 class="section-title">Our Services</h2>
-        <div class="section-divider"></div>
-        <div class="services-container">
-          <article class="service-card">
-            <div class="card-actions">
-              <button class="action-btn like-btn">❤️</button>
-              <button class="action-btn save-btn">💾</button>
-            </div>
-            <img
-              src="https://placehold.co/400x272"
-              alt="Service 1"
-              class="service-image"
-            />
-            <div class="service-content">
-              <p class="service-category">Digital Solutions</p>
-              <h3 class="article-title">Modern Technology</h3>
-              <p class="service-description">
-                Leverage our cutting-edge solutions to transform your business and
-                stay ahead of the competition.
-              </p>
-              <p class="learn-more">Learn More</p>
-            </div>
-          </article>
-      
-          <article class="service-card">
-            <div class="card-actions">
-              <button class="action-btn like-btn">❤️</button>
-              <button class="action-btn save-btn">💾</button>
-            </div>
-            <img
-              src="https://placehold.co/400x272"
-              alt="Service 2"
-              class="service-image"
-            />
-            <div class="service-content">
-              <p class="service-category">Innovation</p>
-              <h3 class="article-title">Creative Solutions</h3>
-              <p class="service-description">
-                Our innovative approach ensures your business stays at the
-                forefront of technological advancement.
-              </p>
-              <p class="learn-more">Discover More</p>
-            </div>
-          </article>
-      
-          <article class="service-card">
-            <div class="card-actions">
-              <button class="action-btn like-btn">❤️</button>
-              <button class="action-btn save-btn">💾</button>
-            </div>
-            <img
-              src="https://placehold.co/400x272"
-              alt="Service 3"
-              class="service-image"
-            />
-            <div class="service-content">
-              <p class="service-category">Excellence</p>
-              <h3 class="article-title">Quality Service</h3>
-              <p class="service-description">
-                Experience unparalleled quality and service excellence with our
-                dedicated team of experts.
-              </p>
-              <p class="learn-more">Find Out More</p>
-            </div>
-          </article>
-        </div>
-      </section>
-      
-      <section class="contact-section">
-        <h2 class="section-title">Contact Us</h2>
-        <div class="section-divider"></div>
-        <div class="contact-container">
-          <div class="contact-info">
-            <div class="info-content">
-              <p class="contact-subtitle">Get In Touch</p>
-              <h3 class="article-title">Let's Start a Conversation</h3>
-              <p class="contact-description">
-                We're here to help you achieve your goals. Reach out to us and
-                let's discuss how we can work together.
-              </p>
-              <p class="contact-tagline">Your Success Awaits</p>
-            </div>
-          </div>
-          <form class="contact-form" data-el="form-1">
-            <h3 class="form-title">Send us a Message</h3>
-            <div class="form-fields">
-              <div class="form-group">
-                <label class="form-label">Name</label>
-                <input
-                  type="text"
-                  placeholder="Enter your name"
-                  class="form-input"
-                  data-el="input-1"
-                  data-dom-state="input-2"
-                />
-              </div>
-              <div class="form-group">
-                <label class="form-label">Email</label>
-                <input
-                  type="email"
-                  placeholder="Enter your email"
-                  class="form-input"
-                  data-el="input-3"
-                  data-dom-state="input-4"
-                />
-              </div>
-              <div class="form-group">
-                <label class="form-label">Message</label>
-                <textarea
-                  placeholder="Your message"
-                  class="form-textarea"
-                  data-el="textarea-1"
-                  data-dom-state="textarea-2"
-                ></textarea>
-              </div>
-            </div>
-            <div class="form-actions">
-              <button type="submit" class="submit-button">Send Message</button>
-              <div class="alternative-action">
-                <span class="or-text">or</span>
-                <button type="button" class="schedule-button">schedule a call</button>
-              </div>
-            </div>
-          </form>
-        </div>
-      </section>
-    </main>
-    <footer class="site-footer">
-      <div class="footer-brand">
-        <img src="./img/logo-sf.png" alt="Logo" class="footer-logo" />
-        <div class="social-links">
-          <a href="https://www.instagram.com/henrry.coronado23/" class="social-link">
-            <img src="./img/icon-1.svg"/>
-          </a>
-          <a href="https://www.linkedin.com/in/henrry-alberto-coronado-villca/" class="social-link">
-            <img src="./img/icon-2.svg"/>
-          </a>
-          <a href="https://github.com/henrrycoronado" class="social-link">
-            <img src="./img/icon-3.svg"/>
-          </a>
-          <a href="mailto:coronadovillcahenrryalberto@gmail.com" class="social-link">
-            <img src="./img/icon-4.svg"/>
-          </a>
-        </div>
-      </div>
-      <div class="footer-links">
-        <h4 class="footer-heading">Tools</h4>
-        <a href="#" class="footer-link">About Us</a>
-        <a href="#" class="footer-link">Services</a>
-        <a href="#" class="footer-link">Contact</a>
-      </div>
-    </footer>
-  </div>
-</body>
+        </footer>
+    </body>
 </html>

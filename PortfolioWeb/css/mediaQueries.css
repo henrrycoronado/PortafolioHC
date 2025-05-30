@@ -1,0 +1,184 @@
+@media (max-width: 991px) {
+    .navigation {
+      padding: 10px 30px;
+    }
+  
+    .nav-link {
+      font-size: 14px;
+      padding: 12px 24px;
+    }
+  
+    .signup-button {
+      padding: 14px 24px;
+      font-size: 16px;
+    }
+  
+    .upload-icon {
+      width: 20px;
+      height: 20px;
+    }
+  
+    .hero {
+      min-height: 500px;
+    }
+  
+    .hero-container {
+      height: 500px;
+    }
+  
+    .hero-image {
+      width: 95%;
+      height: 450px;
+      left: 2.5%;
+      top: 25px;
+    }
+  
+    .hero-content {
+      width: 500px;
+      height: 280px;
+      left: 50%;
+      top: 110px;
+      transform: translateX(-50%);
+    }
+  
+    .title {
+      width: 460px;
+      font-size: 22px;
+      line-height: 26px;
+    }
+  
+    .hero-quote {
+      height: 120px;
+    }
+  
+    .quote-text {
+      font-size: 28px;
+      line-height: 32px;
+      height: 80px;
+    }
+  
+    .footer {
+      height: 240px;
+      padding: 25px 100px;
+    }
+  
+    .footer-logo {
+      width: 280px;
+      height: 108px;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .navigation {
+      padding: 10px 20px;
+    }
+  
+    .nav-logo {
+      width: 100px;
+      height: 38px;
+    }
+  
+    .nav-menu {
+      display: none;
+    }
+  
+    .mobile-menu-button {
+      display: flex;
+    }
+  
+    .hero {
+      min-height: 400px;
+      padding: 0 5px;
+    }
+  
+    .hero-container {
+      height: 400px;
+      border-radius: 16px;
+    }
+  
+    .hero-image {
+      width: 90%;
+      height: 350px;
+      left: 5%;
+      top: 25px;
+    }
+  
+    .hero-content {
+      width: 320px;
+      height: 240px;
+      padding: 15px;
+    }
+  
+    .subtitle {
+      font-size: 12px;
+      line-height: 16px;
+    }
+  
+    .title {
+      width: 280px;
+      font-size: 18px;
+      line-height: 22px;
+    }
+  
+    .hero-quote {
+      height: 100px;
+      gap: 15px;
+    }
+  
+    .quote-text {
+      font-size: 20px;
+      line-height: 24px;
+      height: 60px;
+    }
+  
+    .quote-author {
+      font-size: 12px;
+      line-height: 16px;
+    }
+  
+    .footer {
+      height: auto;
+      min-height: 200px;
+      padding: 20px;
+      flex-direction: column;
+      justify-content: center;
+      gap: 30px;
+    }
+  
+    .footer-content {
+      flex-direction: column;
+      gap: 30px;
+    }
+  
+    .footer-brand {
+      min-width: 0;
+      gap: 20px;
+    }
+  
+    .footer-logo {
+      width: 220px;
+      height: 84px;
+    }
+  
+    .social-links {
+      gap: 12px;
+    }
+  
+    .social-icon {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .footer-section {
+      padding-bottom: 12px;
+    }
+  
+    .footer-title {
+      font-size: 14px;
+    }
+  
+    .footer-link {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }

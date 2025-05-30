@@ -4,11 +4,13 @@ export class TodoItem {
   constructor(text) {
     this.text = text;
   }
+  equals(other) {
+    return this.text == other.text;
+  }
 }
 
 export class TodoList {
   #data = new Set();
-
   get items() {
     return this.#data;
   }
@@ -18,29 +20,41 @@ export class TodoList {
     this.instance = new TodoList();
   }
 
-  constructor() {
-    if (TodoList.instance) {
-      throw new Error("USe get instace");
-    }
-  }
-
   static getInstance() {
     return this.instance;
   }
 
-  add(todoItem) {
+  constructor() {
+    if (TodoList.instance) {
+      throw new Error("use get instance");
+    }
+  }
+
+  add(item) {
     const array = Array.from(this.#data);
-    const todoExist = array.filter((t) => t.text == todoItem.text).length > 1;
-    if (!todoExist) {
-      this.#data.add(todoItem);
+    const itemExists = array.filter((t) => t.equals(item)).length > 0;
+    console.log("Asdas");
+    if (!itemExists) {
+      this.#data.add(item);
       this.notify();
     }
   }
-  delete() {}
 
-  find(text) {
+  delete(text_todo) {
     const array = Array.from(this.#data);
-    return array.find((t) => t.text == text);
+    const itemToDelete = array.filter((t) => t.text == text_todo);
+    this.#data.delete(itemToDelete[0]);
+    this.notify();
+  }
+
+  find(text_todo) {
+    const array = Array.from(this.#data);
+    return array.find((t) => t.text == text_todo);
+  }
+
+  replaceList(list) {
+    this.#data = list;
+    this.notify();
   }
 }
 

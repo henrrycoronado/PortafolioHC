@@ -1,0 +1,207 @@
+.formulario-container{
+  display: flex;
+  width: auto;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 50px;
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.formulario-content-container{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  position: relative;
+  align-self: stretch;
+  background-color: #ffffff;
+  border-radius: 16px 0px 0px 16px;
+}
+
+.formulario-content-title-container  {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.formulario-content-title{
+  position: relative;
+  width: auto;
+  margin-top: -1.00px;
+  font-family: var(--h4-font-family);
+  font-weight: var(--h4-font-weight);
+  color: var(--mainprimary);
+  font-size: var(--h4-font-size);
+  text-align: right;
+  letter-spacing: var(--h4-letter-spacing);
+  line-height: var(--h4-line-height);
+  font-style: var(--h4-font-style);
+}
+
+.formulario-content-body-container {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 20px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.formulario-content-body{
+  position: relative;
+  width: auto;
+  margin-top: -1.00px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: var(--mainprimary);
+  font-size: 25px;
+  text-align: right;
+  letter-spacing: 0;
+  line-height: 30px;
+}
+
+.formulario-form-container{
+  display: flex;
+  flex-direction: column;
+  width: 480px;
+  align-items: center;
+  gap: 10px;
+  padding: 40px;
+  position: relative;
+  border-radius: 0px 30px 30px 0px;
+  overflow: hidden;
+  border: 1px solid;
+  border-color: #cecece;
+  background-image: url(./../../../img/fondo.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.formulario-form-title {
+  width: fit-content;
+  font-family: var(--h3-font-family);
+  font-weight: var(--h3-font-weight);
+  color: #000000;
+  font-size: var(--h3-font-size);
+  line-height: var(--h3-line-height);
+  white-space: nowrap;
+  position: relative;
+  margin-top: -1.00px;
+  letter-spacing: var(--h3-letter-spacing);
+  font-style: var(--h3-font-style);
+}
+
+.formulario-form-inputs-container{
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  position: relative;
+}
+
+.formulario-form-input-container{
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 5px 15px;
+  position: relative;
+}
+
+.formulario-form-input-title{
+  width: auto;
+  margin-right: -2.00px;
+  font-family: "Inter-Medium", Helvetica;
+  font-weight: 500;
+  color: #999999;
+  font-size: 12px;
+  line-height: 9px;
+  position: relative;
+  margin-top: -1.00px;
+  letter-spacing: 0;
+}
+
+.formulario-form-input{
+  align-items: center;
+  flex: 0 0 auto;
+  display: flex;
+  gap: 10px;
+  padding: 15px 20px;
+  position: relative;
+  align-self: stretch;
+  width: auto;
+  background-color: #ffffff;
+  border-radius: 30px;
+  border: 1px solid;
+  border-color: #8b8b8b;
+}
+
+.formulario-form-input-container-2{
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 5px 15px;
+  position: relative;
+}
+
+.formulario-form-input-2{
+  width: 100%;
+  height: 100px;
+  padding: 15px 20px;
+  overflow-y: auto;
+  border-radius: 16px;
+  resize: none;
+}
+
+.formulario-form-button-container {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.formulario-form-button {
+  all: unset;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 18px 32px;
+  position: relative;
+  flex: 0 0 auto;
+  background-color: #2f71e5cc;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.formulario-form-button-text {
+  position: relative;
+  width: fit-content;
+  margin-top: -2.00px;
+  font-family: "Inter-Medium", Helvetica;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
