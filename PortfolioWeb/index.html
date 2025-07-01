@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>My Portfolio</title>
-        <link rel="stylesheet" href="./css/styles.css">
-        <script src="./js/index.js" defer type="module"></script>
+        <link rel="stylesheet" href="./blocks/style.css">
+        <script src="./index.js" defer type="module"></script>
     </head>
     <body>
         <nav class="navigation">
-            <a href="/" class="nav-link">
+            <a href="/" class="nav-link" data-link>
                 <img src="./img/logo-sf.png" class="nav-logo" />
             </a>
             <div class="nav-menu">
-                <a href="/about" class="nav-link">Sobre mí</a>
-                <a href="/projects" class="nav-link">Proyectos</a>
-                <a href="/contact" class="nav-link">Contacto</a>
+                <a href="/about" class="nav-link" data-link>Sobre mí</a>
+                <a href="/projects" class="nav-link" data-link>Proyectos</a>
+                <a href="/contact" class="nav-link" data-link>Contacto</a>
                 <button class="signup-button">
                     <span>Sign Up</span>
                     <img src="./img/icono1.svg" />
@@ -27,22 +27,17 @@
                 <span class="menu-line"></span>
             </button>
         </nav>
-        <main id="container" class="main">
-        </main>
+
+        <main id="root" class="main"></main>
+
         <footer class="footer">
             <div class="footer-content">
                 <div class="footer-brand">
                     <img src="./img/logo-sf.png" alt="Footer logo" class="footer-logo" />
                     <div class="social-links">
-                        <a href="#" class="social-link">
-                            <img src="./img/icono2.svg" />
-                        </a>
-                        <a href="#" class="social-link">
-                            <img src="./img/icono3.svg" />
-                        </a>
-                        <a href="#" class="social-link">
-                            <img src="./img/icono4.svg" />
-                        </a>
+                        <a href="#" class="social-link"><img src="./img/icono2.svg" /></a>
+                        <a href="#" class="social-link"><img src="./img/icono3.svg" /></a>
+                        <a href="#" class="social-link"><img src="./img/icono4.svg" /></a>
                     </div>
                 </div>
                 <div class="footer-links">
@@ -55,5 +50,165 @@
                 </div>
             </div>
         </footer>
+
+        <template id="home-page-template">
+            <link rel="stylesheet" href="./blocks/style.css">
+            <header class="hero">
+                <div class="hero-container">
+                    <img src="/img/fondo.png" alt="Hero background" class="hero-image" />
+                    <div class="hero-content">
+                        <div class="hero-titles">
+                            <p class="subtitle">Portafolio web</p>
+                            <h1 class="title">Henrry Coronado</h1>
+                        </div>
+                        <div class="hero-quote">
+                            <p class="quote-text">"Si lo puedes imaginar, lo puedes programar"</p>
+                            <p class="quote-author">~ Alejandro Miguel Taboada Sanchez</p>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </template>
+        
+        <template id="about-page-template">
+            <link rel="stylesheet" href="./blocks/style.css">
+             <div class="container-content">
+                <div class="titulo-container">
+                    <div class="titulo">Sobre mí</div>
+                    <img class="titulo-line" src="/img/fondo.png" />
+                </div>
+                <div class="presentation-container">
+                    <div class="presentation-container-img">
+                        <img class="presentation-img" src="/img/perfil.png" />
+                    </div>
+                    <div class="presentation-container-content">
+                        <div class="presenttion-content-title-container">
+                            <div class="presentation-content-title1">Mayo de 2025</div>
+                            <p class="presentation-content-title2">Sobre mí : Henrry Alberto Coronado Villca</p>
+                        </div>
+                        <div class="presentation-content-detail-container">
+                            <p class="presentation-content-detail">
+                                Soy un estudiante apasionado en el área de desarrollo de software, con un enfoque en crear soluciones
+                                precisas y eficientes. Mi formación académica en Ingeniería me ha proporcionado una base
+                                técnica en metodologias y estrategias, que complementa mi capacidad para trabajar en equipo y
+                                adaptarme a diferentes entornos. Tengo experiencia en desarrollo web, utilizando principios
+                                SOLID y diferentes patrones de diseño. La variedad de proyectos en mi formacion me hicieron
+                                conocer diferentes frameworks y espacios de trabajo. Mi estilo de personalidad es alguien
+                                perfeccionista, comunicativo, lider nato, critico, adaptativo, sociable y apasionado por
+                                conocer tecnologias nuevas y abarcar diferentes retos en el area de desarrollo.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-container">
+                    <div class="feature-body-container">
+                        <div class="feature-body-img-container">
+                            <img class="feature-body-img" src="/img/img1.png" />
+                        </div>
+                        <div class="feature-body-content-container">
+                            <div class="feature-body-content-title-container">
+                                <div class="feature-body-content-title">⚙️ Habilidades Técnicas ⚙️</div>
+                            </div>
+                            <div class="feature-body-content-detail-container">
+                                <p class="feature-body-content-detail-1">
+                                    💻 Lenguajes de Programación<br />C# (.NET)<br />JavaScript<br />Python<br />C++<br />Delphi
+                                </p>
+                                <p class="feature-body-content-detail-1">
+                                    🗃️ Bases de Datos<br />SQL Server<br />MariaDB / MySQL<br />Oracle<br />Mongo<br />Supabase
+                                </p>
+                                <p class="feature-body-content-detail-1">
+                                    🧱 Frameworks y Librerías<br />.NET Framework<br />React<br />Angular<br />Xamarin
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-body-container">
+                        <div class="feature-body-content-container">
+                            <div class="feature-body-content-title-container">
+                                <div class="feature-body-content-title">🤝 Habilidades Blandas 🤝</div>
+                            </div>
+                            <div class="feature-body-content-detail-container-2">
+                                <p class="feature-body-content-detail-2">
+                                    Me gusta analizar bien los problemas antes de actuar y buscar soluciones prácticas. Suelo
+                                    comunicarme de forma clara, tanto con colegas técnicos como no técnicos. Me adapto rápido al
+                                    trabajo en equipo y valoro mucho el intercambio de ideas. Organizo bien mis tiempos y cumplo con lo
+                                    que me comprometo. Siempre estoy aprendiendo algo nuevo para seguir mejorando.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="feature-body-img-container">
+                            <img class="feature-body-img" src="/img/img2.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </template>
+
+        <template id="projects-page-template">
+            <link rel="stylesheet" href="./blocks/style.css">
+            <div class="titulo-container">
+                <div class="titulo">Mis Proyectos</div>
+                <img class="titulo-line" src="img/fondo.png" />
+            </div>
+            <div class="proyects-container">
+                <div class="proyect-card-complete">
+                    <div class="proyect-card-container">
+                        <img class="proyect-card-image" src="img/img5.png" />
+                        <div class="proyect-card-texto-container">
+                            <div class="proyect-card-texto-title-container">
+                                <div class="proyect-card-texto-title-date">Septiembre del 2024</div>
+                                <div class="proyect-card-texto-title">Gestionador de Eventos</div>
+                            </div>
+                            <div class="proyect-card-texto-detail-container">
+                                <p class="proyect-card-texto-detail">
+                                    Proyecto web con Angular y .NET, orientado a objetos y principios SOLID. Enfocado en la planificación y
+                                    seguimiento de eventos.
+                                </p>
+                                <div class="proyect-card-texto-firma">HENRRY CORONADO</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sec-button"><div class="text-wrapper-2">Ver más</div></div>
+                </div>
+                </div>
+        </template>
+        
+        <template id="contact-page-template">
+            <link rel="stylesheet" href="./blocks/style.css">
+            <div class="formulario-container">
+                <div class="formulario-content-container">
+                  <div class="formulario-content-title-container">
+                    <p class="formulario-content-title">¿Tienes alguna pregunta, propuesta o simplemente quieres saludar?</p>
+                  </div>
+                  <div class="formulario-content-body-container">
+                    <p class="formulario-content-body">
+                      Completa el formulario y me pondré en contacto contigo lo antes posible. ¡Estoy siempre abierto a nuevas
+                      ideas y colaboraciones!
+                    </p>
+                  </div>
+                </div>
+                <div class="formulario-form-container">
+                  <div class="formulario-form-title">Contáctame</div>
+                  <div class="formulario-form-inputs-container">
+                    <div class="formulario-form-input-container">
+                      <div class="formulario-form-input-title">Titulo o razon del mensaje</div>
+                      <input class="formulario-form-input" placeholder="Entrada ..."/>
+                    </div>
+                    <div class="formulario-form-input-container-2">
+                      <div class="formulario-form-input-title">Detalle</div>
+                      <textarea class="formulario-form-input-2" placeholder="Entrada ..."></textarea>
+                    </div>
+                    <div class="formulario-form-input-container">
+                      <div class="formulario-form-input-title">Correo referencia</div>
+                      <input class="formulario-form-input" placeholder="Entrada ..." type="email"/>
+                    </div>
+                  </div>
+                  <div class="formulario-form-button-container">
+                    <button class="formulario-form-button"><div class="formulario-form-button-text">Enviar Formulario</div></button>
+                  </div>
+                </div>
+              </div>
+        </template>
+
     </body>
 </html>
