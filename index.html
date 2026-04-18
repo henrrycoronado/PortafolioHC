@@ -3,46 +3,53 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My Portfolio</title>
-        <link rel="stylesheet" href="./blocks/style.css">
-        <script src="./index.js" defer type="module"></script>
+        <meta name="description" content="Portfolio de Henrry Coronado - Desarrollador Full Stack">
+        <title>Henrry Coronado | Portfolio</title>
+        <link rel="stylesheet" href="index.css">
+        <script src="index.js" defer type="module"></script>
     </head>
     <body>
+        <!-- Navegación principal -->
         <nav class="navigation">
             <a href="/" class="nav-link" data-link>
-                <img src="./img/logo-sf.png" class="nav-logo" />
+                <img src="src/assets/logo-sf.png" class="nav-logo" alt="Logo Henrry Coronado" />
             </a>
             <div class="nav-menu">
                 <a href="/about" class="nav-link" data-link>Sobre mí</a>
                 <a href="/projects" class="nav-link" data-link>Proyectos</a>
                 <a href="/contact" class="nav-link" data-link>Contacto</a>
             </div>
-            <button class="mobile-menu-button">
+            <button class="mobile-menu-button" aria-label="Toggle mobile menu">
                 <span class="menu-line"></span>
                 <span class="menu-line"></span>
                 <span class="menu-line"></span>
             </button>
         </nav>
 
+        <!-- Contenedor principal (SPA) -->
         <main id="root" class="main"></main>
 
+        <!-- Footer -->
         <footer class="footer">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <img src="./img/logo-sf.png" alt="Footer logo" class="footer-logo" />
+                    <img src="src/assets/logo-sf.png" alt="Logo footer" class="footer-logo" />
                     <div class="social-links">
-                        <a href="https://www.linkedin.com/in/henrry-alberto-coronado-villca/" class="social-link"><img src="./img/icono3.svg" /></a>
-                        <a href="https://github.com/henrrycoronado" class="social-link"><img src="./img/icono4.svg" /></a>
+                        <a href="https://www.linkedin.com/in/henrry-alberto-coronado-villca/" class="social-link" aria-label="LinkedIn"><img src="src/assets/icono3.svg" alt="LinkedIn" /></a>
+                        <a href="https://github.com/henrrycoronado" class="social-link" aria-label="GitHub"><img src="src/assets/icono4.svg" alt="GitHub" /></a>
                     </div>
                 </div>
             </div>
         </footer>
 
+        <!-- TEMPLATES DE COMPONENTES -->
+        
+        <!-- Template: Home Page -->
         <template id="home-page-template">
-            <link rel="stylesheet" href="./blocks/style.css">
+            <link rel="stylesheet" href="index.css">
             <header class="hero">
                 <div class="hero-container">
-                    <img src="/img/fondo.png" alt="Hero background" class="hero-image" />
+                    <img src="src/assets/fondo.png" alt="Hero background" class="hero-image" />
                     <div class="hero-content">
                         <div class="hero-titles">
                             <p class="subtitle">Portafolio web</p>
@@ -57,17 +64,18 @@
             </header>
         </template>
         
+        <!-- Template: About Page -->
         <template id="about-page-template">
-            <link rel="stylesheet" href="./blocks/style.css">
+            <link rel="stylesheet" href="index.css">
             <div class="container-content">
                 <div class="titulo-container">
                     <div class="titulo">Sobre mí</div>
-                    <img class="titulo-line" src="/img/fondo.png" />
+                    <img class="titulo-line" src="src/assets/fondo.png" alt="Decorative line" />
                 </div>
                 
                 <div class="presentation-container">
                     <div class="presentation-container-img">
-                        <img class="presentation-img" src="/img/perfil.png" />
+                        <img class="presentation-img" src="src/assets/perfil.png" alt="Henrry Coronado" />
                     </div>
                     <div class="presentation-container-content">
                         <div class="presenttion-content-title-container">
@@ -91,7 +99,7 @@
                 <div class="feature-container">
                     <div class="feature-body-container">
                         <div class="feature-body-img-container">
-                            <img class="feature-body-img" src="/img/img1.png" />
+                            <img class="feature-body-img" src="src/assets/img1.png" alt="Technical Skills" />
                         </div>
                         <div class="feature-body-content-container">
                             <div class="feature-body-content-title-container">
@@ -123,23 +131,24 @@
                             </div>
                         </div>
                         <div class="feature-body-img-container">
-                            <img class="feature-body-img" src="/img/img2.png" />
+                            <img class="feature-body-img" src="src/assets/img2.png" alt="Soft Skills" />
                         </div>
                     </div>
                 </div>
             </div>
         </template>
 
+        <!-- Template: Projects Page -->
         <template id="projects-page-template">
-            <link rel="stylesheet" href="./blocks/style.css">
+            <link rel="stylesheet" href="index.css">
             <div class="titulo-container">
                 <div class="titulo">Mis Proyectos</div>
-                <img class="titulo-line" src="img/fondo.png" />
+                <img class="titulo-line" src="src/assets/fondo.png" alt="Decorative line" />
             </div>
             <div class="proyects-container">
                 <div class="proyect-card-complete">
                     <div class="proyect-card-container">
-                        <img class="proyect-card-image" src="img/img5.png" />
+                        <img class="proyect-card-image" src="src/assets/img5.png" alt="Event Manager Project" />
                         <div class="proyect-card-texto-container">
                             <div class="proyect-card-texto-title-container">
                                 <div class="proyect-card-texto-title-date">Septiembre del 2024</div>
@@ -159,8 +168,9 @@
                 </div>
         </template>
         
+        <!-- Template: Contact Page -->
         <template id="contact-page-template">
-            <link rel="stylesheet" href="./blocks/style.css">
+            <link rel="stylesheet" href="index.css">
             <div class="formulario-container">
                 <div class="formulario-content-container">
                   <div class="formulario-content-title-container">
