@@ -1,210 +1,44 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Portfolio de Henrry Coronado - Desarrollador Full Stack">
-        <title>Henrry Coronado | Portfolio</title>
-        <link rel="stylesheet" href="index.css">
-        <script src="index.js" defer type="module"></script>
-    </head>
-    <body>
-        <!-- Navegación principal -->
-        <nav class="navigation">
-            <a href="/" class="nav-link" data-link>
-                <img src="src/assets/logo-sf.png" class="nav-logo" alt="Logo Henrry Coronado" />
-            </a>
-            <div class="nav-menu">
-                <a href="/about" class="nav-link" data-link>Sobre mí</a>
-                <a href="/projects" class="nav-link" data-link>Proyectos</a>
-                <a href="/contact" class="nav-link" data-link>Contacto</a>
-            </div>
-            <button class="mobile-menu-button" aria-label="Toggle mobile menu">
-                <span class="menu-line"></span>
-                <span class="menu-line"></span>
-                <span class="menu-line"></span>
-            </button>
-        </nav>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="hc-server - Tu servidor personal de proyectos">
+  <title>hc-server | Henrry Coronado</title>
+  <link rel="stylesheet" href="./index.css">
+  <script src="./index.js" defer type="module"></script>
+</head>
+<body>
+  <nav class="navigation">
+    <a href="/" class="nav-link" data-link>
+      <img src="src/assets/logo-sf.png" class="nav-logo" alt="hc-server" />
+    </a>
+    <div class="nav-menu">
+      <a href="/services" class="nav-link" data-link>Servicios</a>
+      <a href="/projects" class="nav-link" data-link>Proyectos</a>
+      <a href="/posts" class="nav-link" data-link>Posts</a>
+      <a href="/contact" class="nav-link" data-link>Contacto</a>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">🌙</button>
+    </div>
+    <button class="mobile-menu-button" aria-label="Toggle mobile menu" id="mobile-menu-btn">
+      <span class="menu-line"></span>
+      <span class="menu-line"></span>
+      <span class="menu-line"></span>
+    </button>
+  </nav>
 
-        <!-- Contenedor principal (SPA) -->
-        <main id="root" class="main"></main>
+  <main id="root" class="main"></main>
 
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <img src="src/assets/logo-sf.png" alt="Logo footer" class="footer-logo" />
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/henrry-alberto-coronado-villca/" class="social-link" aria-label="LinkedIn"><img src="src/assets/icono3.svg" alt="LinkedIn" /></a>
-                        <a href="https://github.com/henrrycoronado" class="social-link" aria-label="GitHub"><img src="src/assets/icono4.svg" alt="GitHub" /></a>
-                    </div>
-                </div>
-            </div>
-        </footer>
-
-        <!-- TEMPLATES DE COMPONENTES -->
-        
-        <!-- Template: Home Page -->
-        <template id="home-page-template">
-            <link rel="stylesheet" href="index.css">
-            <header class="hero">
-                <div class="hero-container">
-                    <img src="src/assets/fondo.png" alt="Hero background" class="hero-image" />
-                    <div class="hero-content">
-                        <div class="hero-titles">
-                            <p class="subtitle">Portafolio web</p>
-                            <h1 class="title">Henrry Coronado</h1>
-                        </div>
-                        <div class="hero-quote">
-                            <p class="quote-text">"Si lo puedes imaginar, lo puedes programar"</p>
-                            <p class="quote-author">~ Alejandro Miguel Taboada Sanchez</p>
-                        </div>
-                    </div>
-                </div>
-            </header>
-        </template>
-        
-        <!-- Template: About Page -->
-        <template id="about-page-template">
-            <link rel="stylesheet" href="index.css">
-            <div class="container-content">
-                <div class="titulo-container">
-                    <div class="titulo">Sobre mí</div>
-                    <img class="titulo-line" src="src/assets/fondo.png" alt="Decorative line" />
-                </div>
-                
-                <div class="presentation-container">
-                    <div class="presentation-container-img">
-                        <img class="presentation-img" src="src/assets/perfil.png" alt="Henrry Coronado" />
-                    </div>
-                    <div class="presentation-container-content">
-                        <div class="presenttion-content-title-container">
-                            <div class="presentation-content-title1">Mayo de 2025</div>
-                            <h3 class="presentation-content-title2">Henrry Alberto Coronado Villca</h3>
-                        </div>
-                        <div class="presentation-content-detail-container">
-                            <p class="presentation-content-detail">
-                                Soy un estudiante apasionado por el desarrollo de software, con un enfoque en crear soluciones precisas y eficientes. Mi formación académica en Ingeniería me ha proporcionado una base técnica sólida en metodologías y estrategias.
-                            </p>
-                            <p class="presentation-content-detail">
-                                Tengo experiencia en el desarrollo web, donde aplico principios SOLID y diversos patrones de diseño. A través de mis proyectos, he adquirido dominio sobre diferentes frameworks y entornos de trabajo.
-                            </p>
-                            <p class="presentation-content-detail">
-                                Me destaco por ser una persona perfeccionista, comunicativa y con capacidad de liderazgo. Disfruto trabajar en equipo, adaptarme a nuevos desafíos y aprender continuamente sobre las últimas tecnologías del sector.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="feature-container">
-                    <div class="feature-body-container">
-                        <div class="feature-body-img-container">
-                            <img class="feature-body-img" src="src/assets/img1.png" alt="Technical Skills" />
-                        </div>
-                        <div class="feature-body-content-container">
-                            <div class="feature-body-content-title-container">
-                                <div class="feature-body-content-title">⚙️ Habilidades Técnicas</div>
-                            </div>
-                            <div class="feature-body-content-detail-container">
-                                <div class="feature-body-content-detail-1">
-                                    <strong>💻 Lenguajes</strong><br />C# (.NET)<br />JavaScript<br />Python<br />C++<br />Delphi
-                                </div>
-                                <div class="feature-body-content-detail-1">
-                                    <strong>🗃️ Bases de Datos</strong><br />SQL Server<br />MariaDB / MySQL<br />Oracle<br />Mongo<br />Supabase
-                                </div>
-                                <div class="feature-body-content-detail-1">
-                                    <strong>🧱 Frameworks</strong><br />.NET Framework<br />React<br />Angular<br />Xamarin
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="feature-body-container reverse">
-                        <div class="feature-body-content-container">
-                            <div class="feature-body-content-title-container">
-                                <div class="feature-body-content-title">🤝 Habilidades Blandas</div>
-                            </div>
-                            <div class="feature-body-content-detail-container-2">
-                                <p class="feature-body-content-detail-2">
-                                    Me gusta analizar bien los problemas antes de actuar y buscar soluciones prácticas. Suelo comunicarme de forma clara, tanto con colegas técnicos como no técnicos. Me adapto rápido al trabajo en equipo y valoro mucho el intercambio de ideas. Organizo bien mis tiempos y cumplo con lo que me comprometo.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="feature-body-img-container">
-                            <img class="feature-body-img" src="src/assets/img2.png" alt="Soft Skills" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </template>
-
-        <!-- Template: Projects Page -->
-        <template id="projects-page-template">
-            <link rel="stylesheet" href="index.css">
-            <div class="titulo-container">
-                <div class="titulo">Mis Proyectos</div>
-                <img class="titulo-line" src="src/assets/fondo.png" alt="Decorative line" />
-            </div>
-            <div class="proyects-container">
-                <div class="proyect-card-complete">
-                    <div class="proyect-card-container">
-                        <img class="proyect-card-image" src="src/assets/img5.png" alt="Event Manager Project" />
-                        <div class="proyect-card-texto-container">
-                            <div class="proyect-card-texto-title-container">
-                                <div class="proyect-card-texto-title-date">Septiembre del 2024</div>
-                                <div class="proyect-card-texto-title">Gestionador de Eventos</div>
-                            </div>
-                            <div class="proyect-card-texto-detail-container">
-                                <p class="proyect-card-texto-detail">
-                                    Proyecto web con Angular y .NET, orientado a objetos y principios SOLID. Enfocado en la planificación y
-                                    seguimiento de eventos.
-                                </p>
-                                <div class="proyect-card-texto-firma">HENRRY CORONADO</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="sec-button"><div class="text-wrapper-2">Ver más</div></div>
-                </div>
-                </div>
-        </template>
-        
-        <!-- Template: Contact Page -->
-        <template id="contact-page-template">
-            <link rel="stylesheet" href="index.css">
-            <div class="formulario-container">
-                <div class="formulario-content-container">
-                  <div class="formulario-content-title-container">
-                    <p class="formulario-content-title">¿Tienes alguna pregunta, propuesta o simplemente quieres saludar?</p>
-                  </div>
-                  <div class="formulario-content-body-container">
-                    <p class="formulario-content-body">
-                      Completa el formulario y me pondré en contacto contigo lo antes posible. ¡Estoy siempre abierto a nuevas
-                      ideas y colaboraciones!
-                    </p>
-                  </div>
-                </div>
-                <div class="formulario-form-container">
-                  <div class="formulario-form-title">Contáctame</div>
-                  <div class="formulario-form-inputs-container">
-                    <div class="formulario-form-input-container">
-                      <div class="formulario-form-input-title">Titulo o razon del mensaje</div>
-                      <input class="formulario-form-input" placeholder="Entrada ..."/>
-                    </div>
-                    <div class="formulario-form-input-container-2">
-                      <div class="formulario-form-input-title">Detalle</div>
-                      <textarea class="formulario-form-input-2" placeholder="Entrada ..."></textarea>
-                    </div>
-                    <div class="formulario-form-input-container">
-                      <div class="formulario-form-input-title">Correo referencia</div>
-                      <input class="formulario-form-input" placeholder="Entrada ..." type="email"/>
-                    </div>
-                  </div>
-                  <div class="formulario-form-button-container">
-                    <button class="formulario-form-button"><div class="formulario-form-button-text">Enviar Formulario</div></button>
-                  </div>
-                </div>
-              </div>
-        </template>
-
-    </body>
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <img src="src/assets/logo-sf.png" alt="hc-server" class="footer-logo" />
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/henrry-alberto-coronado-villca/" class="social-link" aria-label="LinkedIn"><img src="src/assets/icono3.svg" alt="LinkedIn" /></a>
+          <a href="https://github.com/henrrycoronado" class="social-link" aria-label="GitHub"><img src="src/assets/icono4.svg" alt="GitHub" /></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
 </html>

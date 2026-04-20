@@ -1,9 +1,16 @@
+import { HomePage } from "../pages/Home/Home.js";
+import { ServicesPage } from "../pages/Services/Services.js";
+import { ProjectsPage } from "../pages/Projects/Projects.js";
+import { PostsPage } from "../pages/Posts/Posts.js";
+import { ContactPage } from "../pages/Contact/Contact.js";
+
 export const Router = {
     routes: {
-        '/': 'home-page',
-        '/about': 'about-page',
-        '/projects': 'projects-page',
-        '/contact': 'contact-page'
+        '/': HomePage,
+        '/services': ServicesPage,
+        '/projects': ProjectsPage,
+        '/posts': PostsPage,
+        '/contact': ContactPage
     },
 
     init: () => {
@@ -31,13 +38,13 @@ export const Router = {
             history.pushState({ route: normalizedRoute }, "", normalizedRoute);
         }
 
-        const componentTag = Router.routes[normalizedRoute] || Router.routes['/'];
+        const PageComponent = Router.routes[normalizedRoute] || Router.routes['/'];
         
         const main = document.getElementById("root");
         main.innerHTML = "";
         
-        const pageElement = document.createElement(componentTag);
-        main.appendChild(pageElement);
+        const pageInstance = new PageComponent();
+        main.appendChild(pageInstance.render());
         
         window.scrollTo(0, 0);
     },
